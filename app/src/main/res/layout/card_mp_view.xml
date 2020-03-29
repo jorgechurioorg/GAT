@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mpin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/colorLightBack">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_margin="@dimen/card_margin">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:id="@+id/mpin_detalle_loteinterno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/mpin_card"/>
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_proveedor"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_loteproveedor"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_cantok"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                                  />
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_cantrej"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_timestamp"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/mpin_detalle_operador"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/mpin_regKey"
+                        style="@style/mpin_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/mpin_detalle_imagen"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/no_image_3" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

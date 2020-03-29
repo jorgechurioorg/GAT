@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="idig.za.net.firebasetutorial.MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </ListView>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_marginTop="15dp"
+                  android:layout_weight="4"
+                  android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+
+            <Button android:id="@+id/buttonLoadData" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="LoadDummyData"
+                    android:text="Load Data"/>
+            <Button android:id="@+id/buttonAddItem" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="AddItem"
+                    android:text="Add Item"/>
+            <Button android:id="@+id/buttonAddSingleItem" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="LoadSingleItemData"
+                    android:text="Replace Items"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+
+            <Button android:id="@+id/buttonUpdateItem" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="UpdateItem"
+                    android:text="Update Item"/>
+            <Button android:id="@+id/buttonFindItem" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="FindItem"
+                    android:text="Find Item"/>
+            <Button android:id="@+id/buttonDeleteItem" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="DeleteItem"
+                    android:text="Delete Item"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

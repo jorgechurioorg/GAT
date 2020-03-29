@@ -1,0 +1,15 @@
+{
+		"rece": {
+			"SE0001": {
+				"descripcion": "RAV RELL DE RICOTA Y QUESO",
+				"recipe" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"hash":"NONE"
+			},
+			"SE0002": {
+				"descripcion": "RAV RELL DE ESPINACA Y RICOTA",
+				"recipe" : "RICOTA:.200|MUZZARELLA:1.25|ESPINACA:.140|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"hash":"NONE"
+			}
+			
+		}
+}

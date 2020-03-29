@@ -1,0 +1,44 @@
+{
+  "0000001001" : {
+    "alergenType" : "LACTEO",
+    "descripcion" : "pasta ricota y queso",
+    "label" : "no_label",
+    "loteProd" : {
+      "X20" : 20,
+      "X35" : 35,
+      "X50" : 50
+    },
+    "rece" : {
+      "HUEVO FRESCO" : 14.23,
+      "MUZZARELLA" : 12.46,
+      "NUEZ MOSCADA" : 0,
+      "PREGEL MAIZ PGMZ" : 5.69,
+      "RICOTA" : 67.72
+    },
+    "receType" : "RELLENO",
+    "timestamp" : "2019-12-30",
+    "visible" : true,
+    "xunit" : 0.165
+  },
+  "0000001002" : {
+    "alergenType" : "LACTEO",
+    "descripcion" : "PASTA JAMON Y MUZZA",
+    "label" : "no_label",
+    "loteProd" : {
+      "X20" : 20,
+      "X35" : 35,
+      "X50" : 50
+    },
+    "rece" : {
+      "HUEVO FRESCO" : 5.00,
+      "MUZZARELLA" : 35.00,
+	  "JAMON COCIDO" : 35.00,
+      "PIMIENTA" : 0,
+      "RICOTA" : 25.00
+    },
+    "receType" : "RELLENO",
+    "timestamp" : "2019-12-30",
+    "visible" : true,
+    "xunit" : 0.165
+  }
+}

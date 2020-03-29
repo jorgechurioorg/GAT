@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardElevation="2dp"
+    cardview:cardUseCompatPadding="true"
+    android:backgroundTint="@color/colorLightBack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:id="@+id/exinrow_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:layout_alignParentLeft="true"
+                android:text="abcdefghijklmnopqrstu"
+                android:textAllCaps="true"
+                android:textColor="#444"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/exinrow_proveedor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/exinrow_item"
+                android:layout_toEndOf="@id/exinrow_ccosto"
+                android:ellipsize="end"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:gravity="bottom"
+                android:layout_marginLeft="8dp"
+                android:text="Proveedor"
+                android:textColor="#444"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/exinrow_ccosto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/exinrow_item"
+                android:gravity="bottom"
+                android:text="HARINAS"
+                android:textColor="#444"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:id="@+id/exinrow_monto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="1250.25"
+                android:textColor="#444"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/exinrow_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/exinrow_item"
+                android:layout_toStartOf="@id/exinrow_monto"
+                android:layout_marginEnd="8dp"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="10/05"
+                android:textColor="#444"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

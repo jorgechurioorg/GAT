@@ -1,0 +1,122 @@
+{
+  "001" : {
+    "EAN" : "0000000000000000000",
+    "active" : true,
+    "descripcion" : "Rav Ricota",
+    "unidad" : "caja 2x24",
+	"ldesc" : "Ravioles de ricota y queso"
+  },
+  "002" : {
+    "EAN" : "'7795513111154'",
+    "active" : true,
+    "descripcion" : "Rav Espinaca y R",
+    "unidad" : "caja 2x24",
+	"ldesc" : "Ravioles de espinaca y ricota"
+  },
+  "003" : {
+    "EAN" : "'7795513111147'",
+    "active" : true,
+    "descripcion" : "Rav Jam y Muzz",
+    "unidad" : "caja 2x24",
+	"ldesc" : "Ravioles de jamon y muzzarella"
+  },
+  "004" : {
+    "EAN" : "0000000000",
+    "active" : true,
+    "descripcion" : "Rav Cala Veg",
+    "unidad" : "2x24",
+	"ldesc" : "Ravioles de Calabaza veganos"
+  },
+  "005" : {
+    "EAN" : "000000000",
+    "active" : true,
+    "descripcion" : "Rav Medit Veg",
+    "unidad" : "caja 2x24",
+	"ldesc" : "Ravioles mediterraneos veganos"
+  },
+  "006" : {
+    "EAN" : "000000000",
+    "active" : true,
+    "descripcion" : "Sorr Jam y Muzz",
+    "unidad" : "1 docena",
+	"ldesc" : "Sorrentinos de jamon y muzza"
+  },
+  "008" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Rav Puerro Veg",
+    "active" : true,
+    "unidad" : "caja de 2x24",
+	"ldesc" : "Racvioles de puerro veganos"
+  },
+  "009" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Rav Cala y Q",
+    "active" : true,
+    "unidad" : "caja de 2x24",
+	"ldesc" : "Ravioles de calabaza y queso"
+  },
+  "010" : {
+    "EAN" : "0000000000",
+	"active" : true,
+    "descripcion" : "Ñoq papa",
+    "ption" : "bolsa x 250g",
+    "unidad" : "bolsa x 250",
+	"ldesc" : "Ñoquis de papa veganos"
+  },
+  "011" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Ñoq espi",
+    "active" : true,
+    "unidad" : "bolsa x 250g",
+	"ldesc" : "Ñoquis de espinaca veganos"
+  },
+  "012" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Ñoq cala",
+    "active" : true,
+    "unidad" : "bolsa x 250g",
+	"ldesc" : "Ñoquis de calabaza veganos"
+  },
+  "013" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta j y q",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta de jamon y queso"
+  },
+  "014" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta puerr",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta de puerro y provolone"
+  },
+  "015" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta pasc",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta pascualina"
+  },
+  "016" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta cala Veg",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta de calabaza vegana"
+  },
+  "017" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta Zucc Veg",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta de zucchini vegana"
+  },
+  "018" : {
+    "EAN" : "0000000000",
+    "descripcion" : "Tta Med Veg",
+    "active" : true,
+    "unidad" : "Unidad x 360g",
+	"ldesc" : "Tarta mediterranea vegana"
+  }
+}

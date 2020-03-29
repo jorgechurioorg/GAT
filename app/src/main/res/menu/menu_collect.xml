@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menucollectaudit"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:icon="@drawable/audit"
+        android:title="AUDIT"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menucollectsave"
+        android:enabled="true"
+        android:orderInCategory="200"
+        android:title="GUARDAR"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

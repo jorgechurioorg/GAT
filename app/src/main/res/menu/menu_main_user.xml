@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.leofanti.gat.MainActivity">
+    <item
+        android:id="@+id/blocked_icon"
+        android:orderInCategory="200"
+        android:title="NO DISPONIBLE"
+        android:icon="@drawable/candado"
+        android:enabled="false"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menuadmin_labels"
+        android:orderInCategory="300"
+        android:title="Etiquetas"
+        android:icon="@drawable/print"
+        app:showAsAction="always"
+        />
+</menu>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mfg_card_reciper_form_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mfg_card_card_reciper_form_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorClose"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_alergen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="VEGANA"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RELLENO"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_seleccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="RAV DE ESPINACA"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_xunit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="100"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_pxunidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="gr"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/mfg_card_reciper_colapse_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|center_horizontal|end"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkBack"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mfg_card_reciper_form_alergen_chipboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:textSize="14dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/mfg_card_reciper_alergen_chipgroup"
+                style="@style/Widget.MaterialComponents.ChipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/mfg_card_reciper_alergen_opt1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="LACTEO"
+                    android:textAlignment="viewStart"
+                    android:visibility="visible" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/mfg_card_reciper_alergen_opt2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VEGANO" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mfg_card_reciper_form_type_chipboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:textSize="14dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/mfg_card_reciper_type_chipgroup"
+                style="@style/Widget.MaterialComponents.ChipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/mfg_card_reciper_type_opt1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="RELLENO"
+                    android:textAlignment="viewStart"
+                    android:visibility="visible" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/mfg_card_reciper_type_opt2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MASA" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/mfg_card_reciper_type_opt3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PREMIX" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mfg_card_reciper_form_secondfield"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="Descripcion del (semi)elaborado"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/mfg_card_reciper_form_thirdfield"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="peso por unidad de produccion"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBack"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="receta"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="suma: .567"
+                android:textSize="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mfg_card_reciper_recipe_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClose"
+                android:backgroundTint="@color/colorLightBack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/mfg_card_reciper_mp_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/mfg_card_reciper_mp_dosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text=".345"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/mfg_card_reciper_input_mp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGRESA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mfg_card_reciper_trace_panel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANTERIORES"
+                android:textSize="20dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mfg_card_reciper_trace_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClose"
+                android:backgroundTint="@color/colorLightBack" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBack"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mfg_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:padding="0dp"
+            app:contentInsetLeft="10dp"
+            app:contentInsetRight="10dp"
+            app:contentInsetStart="10dp">
+
+            <TextView
+                android:id="@+id/mfg_main_usuario"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="16dp"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            style="@style/mfg_main_column"
+            android:orientation="vertical">
+
+            <com.allyants.boardview.BoardView
+                xmlns:boardview="http://schemas.android.com/apk/res-auto/com.allyants.boardview"
+                boardview:boardItemBackground="@color/colorClose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/boardView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/mfg_main_op_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:src="@drawable/mpin_plus"
+                android:tint="@color/colorAccent"
+                app:backgroundTint="@color/colorTabBarBck"
+                app:borderWidth="4dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="12dp" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

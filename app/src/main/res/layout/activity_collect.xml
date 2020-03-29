@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightBack"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activitycollect_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:padding="0dp"
+            app:contentInsetLeft="10dp"
+            app:contentInsetRight="10dp"
+            app:contentInsetStart="10dp">
+        <TextView
+            android:id="@+id/activitycollect_usuario"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+
+        </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/activitycollect_header"
+                android:visibility="visible"
+                android:text="COBRANZAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"/>
+
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@id/activitycollect_header"
+               >
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="TDY"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="2"/>
+                   <TextView
+                       android:text="WTD"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="3"/>
+                   <TextView
+                       android:text="MTD"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="4"/>
+               </TableRow>
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="FACTURADO"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="1"/>
+
+                   <TextView
+                       android:id="@+id/collectboard_inv_tdy"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:text="1000.00" />
+
+                   <TextView
+                       android:id="@+id/collectboard_inv_wtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:text="CCCC" />
+
+                   <TextView
+                       android:id="@+id/collectboard_inv_mtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:text="DDDD" />
+               </TableRow>
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="COBRADO"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="1"/>
+
+                   <TextView
+                       android:id="@+id/collectboard_cash_tdy"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:text="1000.00" />
+
+                   <TextView
+                       android:id="@+id/collectboard_cash_wtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:text="CCCC" />
+
+                   <TextView
+                       android:id="@+id/collectboard_cash_mtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:text="DDDD" />
+               </TableRow>
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="CHEQUE"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="1"/>
+
+                   <TextView
+                       android:id="@+id/collectboard_check_tdy"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:text="BBBB" />
+
+                   <TextView
+                       android:id="@+id/collectboard_check_wtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:text="CCCC" />
+
+                   <TextView
+                       android:id="@+id/collectboard_check_mtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:text="DDDD" />
+               </TableRow>
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorError">
+
+                   <TextView
+                       android:text="DEBE"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/table_cell"
+                       android:layout_column="1"/>
+
+                   <TextView
+                       android:id="@+id/collectboard_debe_tdy"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:text="BBBB" />
+
+                   <TextView
+                       android:id="@+id/collectboard_debe_wtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:text="CCCC" />
+
+                   <TextView
+                       android:id="@+id/collectboard_debe_mtd"
+                       style="@style/table_cell"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:text="DDDD" />
+               </TableRow>
+           </TableLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/activitycollect_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/mpin_plus"
+                android:tint="@color/colorAccent"
+                app:backgroundTint="@color/colorClose"
+                app:borderWidth="1dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="12dp" />
+        </RelativeLayout>
+
+</LinearLayout>

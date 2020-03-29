@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mpin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/mpin_materia_prima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:hint="Materia prima"
+                android:inputType="textNoSuggestions"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/mpin_proveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mpin_materia_prima"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:hint="Proveedor"
+                android:inputType="textNoSuggestions"
+                 />
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/mpin_div1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/mpin_proveedor"
+                android:layout_margin="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/rotulo_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mpin_div1"
+                android:layout_margin="@dimen/card_margin"
+                android:background="@color/colorDeleted">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imagen_rotulo"
+                    android:layout_width="@dimen/cardview_imagen_width"
+                    android:layout_height="@dimen/cardview_imagen_height"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camera" />
+
+                <EditText
+                    android:id="@+id/mpin_lotefab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@id/imagen_rotulo"
+                    android:hint="Lote Fabricante"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:visibility="visible">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mpin_elab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mpin_lotefab2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@id/imagen_rotulo"
+                    android:hint="Fecha elaboracion"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textColorHint="@color/colorAccent"
+                    android:visibility="visible">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mpin_vence2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mpin_elab2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@id/imagen_rotulo"
+                    android:hint="Fecha vencimiento"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textColorHint="@color/colorAccent"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cants_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rotulo_block"
+                android:layout_margin="@dimen/card_margin">
+
+                <EditText
+                    android:id="@+id/mpin_cant_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:hint="Recibida"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccent"
+                    android:visibility="visible">
+                </EditText>
+                <TextView
+                    android:id="@+id/mpin_unidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/mpin_cant_no"
+                    android:layout_toEndOf="@id/mpin_cant_ok"
+                    android:gravity="center"
+                    android:text="xx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+                <EditText
+                    android:id="@+id/mpin_cant_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Rechazada"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccent">
+                </EditText>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/cants_block"
+                android:layout_width="match_parent"
+                android:id="@+id/mpin_hr2"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/mpin_expense_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mpin_hr2"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                android:layout_margin="@dimen/card_margin">
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

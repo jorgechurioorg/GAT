@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardElevation="2dp"
+    cardview:cardUseCompatPadding="true"
+    android:backgroundTint="@color/colorLightBack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ruta_icon"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/mpRvItemHeight"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:src="@drawable/canal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpRvItemHeight"
+            android:layout_toEndOf="@+id/ruta_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/ruta_cobrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1234,00"
+                android:textSize="20dp"
+                android:paddingBottom="1dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                 />
+            <TextView
+                android:id="@+id/ruta_credito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1234,00"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/ruta_cobrado"
+                android:textColor="@color/colorPrimary"
+                android:gravity="right"
+                />
+
+            <TextView
+            android:id="@+id/ruta_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/ruta_cobrado"
+            android:text="abcdefghijklmnopqrstuvwxyz"
+            android:textAllCaps="true"
+            android:textColor="#444"
+            android:textSize="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ruta_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ruta_cliente"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="1dp"
+            android:layout_marginLeft="8dp"
+            android:text="direccion"
+            android:textColor="#444"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

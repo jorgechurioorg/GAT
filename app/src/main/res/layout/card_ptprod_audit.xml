@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBack"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ptprodaudit_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/cancela" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDarkBack">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ptprodaudit_to_date"
+            style="@style/Widget.MaterialComponents.ChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="0dp"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ptprodaudit_today"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TODAY"
+            android:visibility="visible" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ptprodaudit_wtd"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WTD"
+            android:checked="false"
+            android:visibility="visible" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ptprodaudit_mtd"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="MTD" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ptprodaudit_pastmonth"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LMONTH" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_weight="12"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="6dp"
+            android:background="@color/colorClose"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ptprodaudit_datemode"
+                android:layout_width="0dp"
+                android:textSize="16dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ptprodaudit_groupmode"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ptprodaudit_total"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ptprodaudit_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            tools:backgroundTint="@color/colorLightBack" />
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

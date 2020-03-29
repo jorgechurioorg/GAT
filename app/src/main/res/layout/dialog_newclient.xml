@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+
+
+                    <EditText
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:id="@+id/newclient_name"
+                        android:hint="NOMBRE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/newclient_direccion"
+                        android:hint="DIRECCION"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/newclient_localidad"
+                        android:hint="LOCALIDAD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                                  />
+
+                    <EditText
+                        android:id="@+id/newclient_celu"
+                        android:hint="CELULAR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+
+</LinearLayout>

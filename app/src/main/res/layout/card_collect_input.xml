@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightBack"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cardcollectin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/cardcollectin_cliente"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"/>
+
+
+            <TextView
+            android:id="@+id/cardcollectin_direccion"
+            android:visibility="gone"
+            android:layout_below="@id/cardcollectin_cliente"
+            android:textSize="20dp"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+            android:id="@+id/cardcollectin_fecha"
+            android:visibility="visible"
+            android:hint="FECHA"
+            android:layout_below="@id/cardcollectin_direccion"
+            android:textSize="20dp"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/cardcollectin_saldoanterior_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/cardcollectin_fecha">
+
+                <TextView
+                    android:id="@+id/cardcollectin_saldo_anterior"
+                    android:layout_weight="4"
+                    android:visibility="visible"
+                    android:text="1500,00"
+                    android:textSize="26dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="visible"
+                    android:text="Saldo anterior"
+                    android:layout_weight="8"
+                    android:textSize="26dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:id="@+id/cardcollectin_div1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/cardcollectin_saldoanterior_block"
+                android:layout_margin="0dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/cardcollectin_imageblock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardcollectin_div1"
+                android:layout_margin="@dimen/card_margin"
+                android:background="@color/colorLightBack"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/cardcollectin_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/cardcollectin_esta_venta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@id/cardcollectin_image"
+                    android:hint="ESTA VENTA"
+                    android:textSize="20dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorCardText"
+                    />
+
+                <EditText
+                    android:id="@+id/cardcollectin_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="false"
+                    android:layout_below="@id/cardcollectin_esta_venta"
+                    android:layout_toLeftOf="@id/cardcollectin_image"
+                    android:hint="TOTAL"
+                    android:textSize="26dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorCardText"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/cardcollectin_imageblock"
+                android:layout_width="match_parent"
+                android:id="@+id/cardcollectin_hr2"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/cardcollectin_incomeblock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardcollectin_hr2"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/card_margin">
+                
+
+                <EditText
+                    android:id="@+id/cardcollectin_cash"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="left"
+                    android:hint="EFECTIVO"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccent">
+                </EditText>
+                
+
+                <EditText
+                    android:id="@+id/cardcollectin_cheque"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="CHEQUE"
+                    android:gravity="left"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccent">
+                </EditText>
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardcollectin_saldofinal_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/cardcollectin_incomeblock">
+
+
+                <TextView
+                    android:id="@+id/cardcollectin_saldo_actual"
+                    android:layout_weight="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="start"
+                    android:text="1500,00"
+                    android:textSize="24dp"
+                    android:inputType="numberDecimal"
+                                       />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textStart"
+                    android:textSize="24dp"
+                    android:text="Saldo actual"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardcollectin_notesblock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardcollectin_saldofinal_block"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/card_margin"
+                tools:ignore="UnknownId">
+                <EditText
+                    android:id="@+id/cardcollectin_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nota"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

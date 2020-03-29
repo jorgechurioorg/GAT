@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.leofanti.gat">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        tools:replace="android:label"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_005_pasta_1"
+        android:label="GAT"
+        android:roundIcon="@drawable/ic_005_pasta_1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainLauncher"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".MainActivityCollect"
+            android:label="Collect Prototype"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".MainActivityMfg"
+            android:label="Mfg Prototype"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".MainActivitySetup"
+            android:label="Master Setup"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".UserPinInput"
+            android:label="Ingreso de pin de usuario"
+            android:parentActivityName=".MainLauncher"></activity>
+        <activity
+            android:name=".LabelActivity"
+            android:label="Impresion de etiquetas"></activity>
+
+    </application>
+
+</manifest>

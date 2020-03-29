@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ptout_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:backgroundTint="@color/colorLoginBck"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardElevation="2dp"
+    cardview:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ptout_LL">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ptout_status"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/ptout_ruta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ptout_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Nombre del cliente"
+                android:textColor="#444"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ptout_adrress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="#444"
+                android:textSize="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="direccion - localidad"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ptout_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="05/05/19"
+                android:textAllCaps="true"
+                android:textColor="#444"
+                android:textSize="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ptout_field30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="right"
+                android:maxLines="1"
+                android:text="$2500,00"
+                android:textColor="#444"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/ptout_field31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="right"
+                android:maxLines="1"
+                android:text="$2500,00"
+                android:textColor="#444"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.leofanti.gat.MainActivity">
+    <item
+        android:id="@+id/menuusr_add"
+        android:orderInCategory="400"
+        android:title="CREAR"
+        android:icon="@drawable/audit"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menuusr_del"
+        android:orderInCategory="200"
+        android:title="BORRAR"
+        android:icon="@drawable/new_client"
+        app:showAsAction="always"
+        />
+</menu>

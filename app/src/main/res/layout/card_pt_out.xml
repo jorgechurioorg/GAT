@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ptout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDarkBack">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ptoutscan_chips"
+            style="@style/Widget.MaterialComponents.ChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="0dp"
+            android:visibility="visible"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ptout_byproduct"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="POR PROD"
+                android:visibility="visible" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ptout_bylot"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POR LOTE"
+                android:visibility="visible" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCardText"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/ptout_shipnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Nota para despacho"
+                />
+
+            <TextView
+                android:id="@+id/ptout_scan_created"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/ptout_scan_closed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/ptout_scan_canal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="12">
+                <AutoCompleteTextView
+                    android:id="@+id/ptout_cliente"
+                    android:layout_width="0dp"
+                    android:layout_weight="11"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginEnd="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    android:hint="cliente"
+                    android:inputType="textNoSuggestions"
+                    android:visibility="gone"
+                    />
+                <ImageButton
+                    android:id="@+id/ptout_newclient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_client"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ptOutScanScreen"
+                android:background="@color/colorCardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                        android:id="@+id/ptOutScanScannerWindow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/scanner_window"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="XXXXXXXXXXX"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/colorDarkBack" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="left"
+                                android:maxLength="10"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pt_lote"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/qtyField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="left"
+                                android:maxLength="3"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ptscan_editmsg"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorOpen"
+                    android:text="MODIFICAR EL INGRESO"
+                    android:scrollbarSize="10dp"/>
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/ptoutscan_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:scrollingCache="true">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ptoutscan_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        tools:backgroundTint="@color/colorLightBack" />
+
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

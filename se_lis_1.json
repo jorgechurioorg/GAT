@@ -1,0 +1,112 @@
+{
+		"selist": {
+			"SE0001": {
+				"descripcion": "RAV RELL DE RICOTA Y QUESO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0002": {
+				"descripcion": "RAV RELL DE ESPINACA Y RICOTA",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0003": {
+				"descripcion": "RAV RELL DE JAMÓN Y MUZZA",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0004": {
+				"descripcion": "RAV RELL DE CALABAZA Y QUESO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0005": {
+				"descripcion": "RAV RELL DE CALABAZA VEGANO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0006": {
+				"descripcion": "RAV RELL MEDITERRANEO VEG",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0007": {
+				"descripcion": "RAV RELL DE PUERRO VEGANO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0008": {
+				"descripcion": "TARTA RELL DE PUERRO Y PROVO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0009": {
+				"descripcion": "TARTA RELL VEG DE ZUCCIHNI",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0010": {
+				"descripcion": "TARTA RELL de espinaca y huevo",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "RELLENO"
+			},
+			"SE0011": {
+				"descripcion": "LAMINA HUEVO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},
+			"SE0012": {
+				"descripcion": "LAMINA VEG",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},
+			"SE0013": {
+				"descripcion": "MASA TARTA HUEVO",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},
+			"SE0013": {
+				"descripcion": "MASA TARTA VEG",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},
+			"SE0014": {
+				"descripcion": "ÑOQUIS PAPA",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},			
+			"SE0015": {
+				"descripcion": "ÑOQUIS ESPINACA",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			},	
+			"SE0016": {
+				"descripcion": "ÑOQUIS CALABAZA",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "MASA"
+			}
+			"SE0101": {
+				"descripcion": "PMX LMHV",
+				"dosis":"x20:20|x35:35|x50:50|x85:85",
+				"rece" : "RICOTA:.200|MUZZARELLA:1.25|NUEZ MOSCADA:X|HUEVO FRESCO:.050|PGMZ:.100",
+				"type" : "PREMIX"
+			}
+		}
+}

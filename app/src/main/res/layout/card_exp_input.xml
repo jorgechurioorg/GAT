@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mpin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.ActionBar"
+            app:navigationIcon="@drawable/back_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                    android:id="@+id/exin_item_gasto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    android:hint="Seleccionar el gasto"
+                    android:inputType="textNoSuggestions"
+                    />
+
+            <TextView
+                android:id="@+id/exin_item_gasto_text"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/exin_proveedor"
+                    android:layout_width="0dp"
+                    android:layout_weight="11"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    android:hint="Seleccionar proveedor"
+                    android:inputType="textNoSuggestions"
+                     />
+                <ImageButton
+                    android:id="@+id/exin_newprov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_client"
+                    android:visibility="visible"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/exin_item_prov_text"
+                android:visibility="gone"
+                android:layout_below="@id/exin_item_gasto_text"
+                android:textSize="20dp"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/exin_date_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="fecha gasto"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/exin_ticket_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exin_date_in"
+                android:layout_margin="@dimen/card_margin"
+                android:background="@color/colorLightBack">
+
+                <ImageView
+                    android:id="@+id/imagen_ticket"
+                    android:layout_width="@dimen/cardview_imagen_width"
+                    android:layout_height="200dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/mpin_expense_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imagen_ticket"
+                    android:text="Imagen del comprobante"
+                    android:textColor="@color/colorCardText"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/exin_ticket_block"
+                android:layout_width="match_parent"
+                android:id="@+id/exin_hr2"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/exin_expense_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exin_hr2"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                android:layout_margin="@dimen/card_margin">
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exin_radio_group"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+                    <RadioButton android:id="@+id/exinexp_factura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Factura"
+                        />
+                    <RadioButton android:id="@+id/exinexp_remito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remito"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:gravity="right"
+                    android:textColorHint="@color/colorAccent"
+                />
+
+                <EditText
+                    android:id="@+id/exin_monto"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/exin_radio_group"
+                    android:textSize="20dp"
+                    android:gravity="left"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccent">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

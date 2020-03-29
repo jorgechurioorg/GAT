@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_weight="12"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/ptproddialog_prefix"
+                android:textSize="24dp"/>
+
+
+        <EditText
+            android:id="@+id/ptproddialog_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:hint="CANT"
+            android:inputType="number"
+            android:gravity="center"/>
+
+</LinearLayout>
